@@ -82,3 +82,14 @@ function searchFunction() {
     // Add your search logic here
     console.log('Searching...'); // Example: Displaying a message
 }
+
+const searchBar = document.createElement('input');
+searchBar.type = 'text';
+searchBar.placeholder = 'Search...';
+searchBar.style.width = '200px';
+searchBar.style.padding = '5px';
+searchBar.style.border = '2px solid #ccc';
+searchBar.style.borderRadius = '5px';
+searchBar.style.marginRight = '10px';
+
+document.body.appendChild(searchBar);
