@@ -3,6 +3,10 @@ const searchButton = document.createElement('button');
 searchButton.textContent = 'Search';
 document.body.appendChild(searchButton);
 
+const image = document.createElement('img');
+image.src = 'image.jpg';
+document.body.appendChild(image);
+
 // Buy Page
 const buyButton = document.createElement('button');
 buyButton.textContent = 'Buy';
