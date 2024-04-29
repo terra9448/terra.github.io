@@ -1,72 +1,81 @@
-// Code for Real Estate Website
+// Code to Generate
 
-// HTML structure for the search bar
-const searchBar = `
-<div class="search-bar">
-    <input type="text" placeholder="Search...">
-    <button>Search</button>
-</div>
+// HTML structure for the real estate website
+const terra = `
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#search">Search</a></li>
+                <li><a href="#login">Login</a></li>
+                <li><a href="#signup">Signup</a></li>
+                <li><a href="#sell">Sell</a></li>
+                <li><a href="#buy">Buy</a></li>
+                <li><a href="#rent">Rent</a></li>
+                <li><a href="#lease">Lease</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Content sections for different pages -->
+    </main>
+    <footer>
+        <!-- Footer content -->
+    </footer>
+</body>
+</html>
 `;
 
-// HTML structure for the login page
-const loginPage = `
-<form class="login-form">
-    <input type="email" placeholder="Email">
-    <input type="password" placeholder="Password">
-    <button>Login</button>
-</form>
-`;
-
-// HTML structure for the signup page
-const signupPage = `
-<form class="signup-form">
-    <input type="text" placeholder="Name">
-    <input type="email" placeholder="Email">
-    <input type="tel" placeholder="Phone Number">
-    <input type="password" placeholder="Password">
-    <button>Sign Up</button>
-</form>
-`;
-
-// HTML structure for the sell page
-const sellPage = `
-<form class="sell-form">
-    <input type="file" accept="image/*" multiple>
-    <input type="number" placeholder="Price">
-    <input type="text" placeholder="Location">
-    <button>Submit</button>
-</form>
-`;
-
-// HTML structure for the contact us page
-const contactUsPage = `
-<form class="contact-form">
-    <input type="text" placeholder="Name">
-    <input type="email" placeholder="Email">
-    <textarea placeholder="Describe your problem"></textarea>
-    <button>Submit</button>
-</form>
-`;
-
-// Additional pages can be created similarly for buy, lease, rent, about us, etc.
-
-// JavaScript for Storing Password
-function storePassword() {
-    let password = document.getElementById('password').value;
-    // Code to store password securely
+// CSS styles for the real estate website
+const styles = `
+/* CSS styles for the real estate website */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
 }
 
-// JavaScript for Login Page
-function login() {
-    let email = document.getElementById('email').value;
-    let password = document.getElementById('password').value;
-    // Code to authenticate login credentials
+header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
 }
 
-// JavaScript for Contact Form Submission
-function submitForm() {
-    let name = document.getElementById('name').value;
-    let email = document.getElementById('email').value;
-    let problem = document.getElementById('problem').value;
-    // Code to handle form submission
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+`;
+
+// JavaScript functionality for the real estate website
+const script = `
+// JavaScript code for interactive features
+// Add your JavaScript code here
+`;
+
+// Output the generated HTML, CSS, and JavaScript
+console.log(realEstateWebsite);
+console.log(styles);
+console.log(script);
