@@ -69,3 +69,8 @@ const redirectLogic = (userType) => {
 // Example Usage
 redirectLogic('new');
 redirectLogic('existing');
+
+// Redirect to sell page when the sell button is clicked
+document.getElementById('sellButton').addEventListener('click', function() {
+    window.location.href = 'sell-page.html';
+});
