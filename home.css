@@ -73,3 +73,43 @@
 .contact-us-page {
   /* Add your styles here */
 }
+.sell-button {
+    cursor: pointer;
+}
+
+.sell-button:active {
+    transform: translateY(2px);
+}
+
+.sell-button:focus {
+    outline: none;
+}
+
+.sell-button:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    transition: background 0.3s;
+}
+
+.sell-button:hover:after {
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.sell-button:active:after {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.sell-button:active .sell-icon {
+    transform: scale(0.9);
+}
+
+.sell-button .sell-icon {
+    transition: transform 0.3s;
+}
