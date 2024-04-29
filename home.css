@@ -1,549 +1,102 @@
-/* Styling for Home Page Navigation Buttons */
-.search-button {
-  background-color: #3498db;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.search-button:hover {
-  background-color: #2980b9;
-}
-
-.image-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.image {
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 50%;
-  margin: 10px;
-}
-
-
-.buy-button {
-  background-color: #4CAF50;
-  color: white;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 5px;
-
-}
-
-.sell-button {
-  background-color: #4CAF50;
-  color: white;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-.rent-button {
-  background-color: #4CAF50;
-  color: white;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-.lease-button {
-  background-color: #4CAF50;
-  color: white;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-.about-button {
-  background-color: #3498db;
-  color: #ffffff;
-  padding: 10px 20px;
-  border-radius: 5px;
-  text-transform: uppercase;
-  font-weight: bold;
-  text-decoration: none;
-  display: inline-block;
-}
-
-
-.contact-button {
-  background-color: #3498db;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 5px;
-  text-transform: uppercase;
-  font-weight: bold;
-  text-decoration: none;
-  display: inline-block;
-}
-
-
-/* Styling for Signup, Login, and Redirect Pages */
-button {
-    cursor: pointer;
-}
-
-button:active {
-    color: blue;
-}
-
-button:active::after {
-    content: "Redirecting to Signup Page...";
-    display: block;
-    color: red;
-}
-
-/* Styles for Signup Form Container */
-.signup-form {
-  max-width: 400px;
-  margin: 0 auto;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  background-color: #f9f9f9;
-}
-
-/* Styles for Form Inputs */
-.signup-form input {
-  width: 100%;
-  padding: 10px;
-  margin: 5px 0;
-  border: 1px solid #ccc;
-  border-radius: 3px;
-}
-
-/* Styles for Submit Button */
-.signup-form button {
-  width: 100%;
-  padding: 10px;
-  border: none;
-  border-radius: 3px;
-  background-color: #007bff;
-  color: #fff;
-  cursor: pointer;
-}
-
-/* Styles for Password Requirement Text */
-.password-requirement {
-  font-size: 12px;
-  color: #888;
-}
-
-button {
-    cursor: pointer;
-}
-
-button:active {
-    /* Redirect to login page */
-    window.location.href = "login.html";
-}
-
-button[data-action="buy"]:active,
-button[data-action="sell"]:active,
-button[data-action="contact"]:active,
-button[data-action="lease"]:active,
-button[data-action="rent"]:active {
-    /* Store login details until user clears the website */
-    localStorage.setItem('isLoggedIn', 'true');
-}
-
-/* CSS for Login Page */
+/* styles.css */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #f0f0f0;
+    color: #333;
     margin: 0;
     padding: 0;
 }
 
-.container {
-    width: 50%;
-    margin: 100px auto;
-    background: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 0;
 }
 
-input[type="text"],
-input[type="password"] {
-    width: 100%;
-    padding: 10px;
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+section {
+    margin: 20px;
+}
+
+input, textarea, button {
     margin: 5px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    padding: 5px;
+    width: 100%;
 }
 
 button {
-    width: 100%;
-    background: #007bff;
-    color: #fff;
+    background-color: #007bff;
+    color: white;
     border: none;
-    padding: 10px;
     cursor: pointer;
-    border-radius: 5px;
 }
 
 button:hover {
-    background: #0056b3;
+    background-color: #0056b3;
+}
+/* CSS for Blue Theme */
+body {
+    background-color: #f0f5ff;
+    color: #333;
+    font-family: Arial, sans-serif;
 }
 
+/* Search Bar Styling */
+.search-bar {
+    background-color: #3f51b5;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
 
-/* Styling for the Buy Page */
-.buy-page {
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
+/* Login Page Styling */
+.login-page {
+    background-color: #f0f5ff;
     padding: 20px;
 }
 
-.photo {
-    width: 100%;
-    max-width: 400px;
-    height: auto;
-    display: block;
-    margin: 0 auto 20px;
+/* Signup Page Styling */
+.signup-page {
+    background-color: #f0f5ff;
+    padding: 20px;
 }
 
-.price {
-    font-size: 24px;
-    color: #333;
-    margin-bottom: 10px;
-}
-
-.location {
-    font-style: italic;
-    color: #666;
-    margin-bottom: 20px;
-}
-
-.edit-button {
-    background-color: #007bff;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.edit-button:hover {
-    background-color: #0056b3;
-}
-
-/* CSS for Sell Page Design */
+/* Sell Page Styling */
 .sell-page {
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
+    background-color: #f0f5ff;
     padding: 20px;
 }
 
-.sell-form {
-    max-width: 600px;
-    margin: 0 auto;
-    background-color: #fff;
+/* Buy Page Styling */
+.buy-page {
+    background-color: #f0f5ff;
     padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.sell-form input[type="text"],
-.sell-form input[type="number"],
-.sell-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 5px 0;
-    border: 1px solid #ccc;
-    border-radius: 3px;
+/* Rent Page Styling */
+.rent-page {
+    background-color: #f0f5ff;
+    padding: 20px;
 }
 
-.sell-form button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-}
-
-.sell-form button:hover {
-    background-color: #45a049;
-}
-
-.sell-form button:active {
-    background-color: #3e8e41;
-}
-
-
-/* CSS for Professional Rent Page Design */
-
-/* Styling for Photos */
-.photos {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-}
-
-/* Styling for Price */
-.price {
-  font-size: 1.2rem;
-  color: #333;
-}
-
-/* Styling for Location */
-.location {
-  font-style: italic;
-  color: #666;
-}
-
-/* Styling for Edit Button */
-.edit-button {
-  background-color: #007bff;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-/* Styling for Email Notification */
-.email-notification {
-  font-weight: bold;
-  color: #dc3545;
-}
-
-/* Style for Lease Page */
+/* Lease Page Styling */
 .lease-page {
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
+    background-color: #f0f5ff;
     padding: 20px;
-}
-
-/* Photo Styling */
-.photo {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-    margin-bottom: 10px;
-}
-
-/* Price Styling */
-.price {
-    font-size: 20px;
-    color: #333;
-    margin-bottom: 5px;
-}
-
-/* Location Styling */
-.location {
-    font-size: 16px;
-    color: #555;
-    margin-bottom: 10px;
-}
-
-/* Button Styling */
-.button {
-    background-color: #007bff;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-/* Button Hover Effect */
-.button:hover {
-    background-color: #0056b3;
-}
-
-/* Email Form Styling */
-.email-form {
-    margin-top: 20px;
-}
-
-/* Input Field Styling */
-.input-field {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-/* Submit Button Styling */
-.submit-button {
-    background-color: #28a745;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-/* Submit Button Hover Effect */
-.submit-button:hover {
-    background-color: #218838;
-}
-
-
-/* Styling for the About Page */
-.about-page {
-  font-family: 'Arial', sans-serif;
-  background-color: #f9f9f9;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.about-page h1 {
-  color: #333;
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-.about-page p {
-  color: #666;
-  font-size: 16px;
-  line-height: 1.6;
-}
-
-.about-page a {
-  color: #007bff;
-  text-decoration: none;
-}
-
-.about-page a:hover {
-  text-decoration: underline;
 }
 
 /* Contact Form Styling */
-form {
-  max-width: 400px;
-  margin: 0 auto;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  background-color: #f9f9f9;
-}
-
-input[type="text"],
-input[type="email"],
-textarea {
-  width: 100%;
-  padding: 8px;
-  margin: 6px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
-
-input[type="submit"] {
-  background-color: #4CAF50;
-  color: white;
-  padding: 10px 15px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-input[type="submit"]:hover {
-  background-color: #45a049;
-}
-
-/* Responsive Design */
-@media screen and (max-width: 600px) {
-  input[type="text"],
-  input[type="email"],
-  textarea {
-    width: 100%;
-    margin-top: 0;
-  }
-}
-
-.sell-button {
-    cursor: pointer;
-}
-
-.sell-button:active {
-    transform: translateY(2px);
-}
-
-.sell-button:focus {
-    outline: none;
-}
-
-.sell-button:after {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    transition: background 0.3s;
-}
-
-.sell-button:hover:after {
-    background: rgba(0, 0, 0, 0.4);
-}
-
-.sell-button:active:after {
-    background: rgba(0, 0, 0, 0.6);
-}
-
-.sell-button:active .sell-icon {
-    transform: scale(0.9);
-}
-
-.sell-button .sell-icon {
-    transition: transform 0.3s;
-}
-.search-bar {
-  width: 300px;
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 20px;
-  outline: none;
-  font-size: 16px;
-  color: #333;
-}
-
-.search-bar::placeholder {
-  color: #999;
-}
-
-.search-button {
-  padding: 8px 16px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 20px;
-  cursor: pointer;
+.contact-form {
+    background-color: #f0f5ff;
+    padding: 20px;
 }
