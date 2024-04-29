@@ -5,106 +5,65 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Terra</title>
+    <title>Real Estate Website</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
-    <!DOCTYPE html>
-<html>
-<head>
-    <style>
-        body {
-            background-color: blue;
-        }
-    </style>
-</head>
-<body>
-    <h1>own your dream !</h1>
-    <p>This is a sample text with a blue theme.</p>
-</body>
-</html>
-    <button onclick="redirectTo('search')">Search</button>
-    <button onclick="redirectTo('buy')">Buy</button>
-    <button onclick="redirectTo('sell')">Sell</button>
-    <button onclick="redirectTo('rent')">Rent</button>
-    <button onclick="redirectTo('lease')">Lease</button>
-    <button onclick="redirectTo('about')">About Us</button>
-    <button onclick="redirectTo('contact')">Contact Us</button>
-
-    <script>
-        function redirectTo(page) {
-            if (isNewUser()) {
-                window.location.href = 'signup.html';
-            } else {
-                window.location.href = 'login.html';
-            }
-
-            function isNewUser() {
-                // Check if the user is new or existing
-                return true; // For demonstration, always consider as a new user
-            }
-        }
-    </script>
-</body>
-
-</html>
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Image Gallery</title>
-</head>
-<body>
-    <h1>..</h1>
-    <img src="download.jpg">
-    <img src="image2.jpg">
-    <img src="image3.jpg">
-</body>
-</html>
-<form action="/search" method="get">
-  <label for="search">Search:</label>
-  <input type="text" id="search" name="q" placeholder="Search...">
-  <button type="submit">Search</button>
-</form>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-        }
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 0 20px;
-        }
-        h1 {
-            color: #333;
-        }
-        p {
-            color: #666;
-        }
-    </style>
-</head>
 <body>
     <header>
-        <h1>Welcome to Our Website</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Buy</a></li>
+                <li><a href="#">Sell</a></li>
+                <li><a href="#">Rent</a></li>
+                <li><a href="#">Lease</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
     </header>
-    <div class="container">
-        <h2>About Us</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget justo nec justo ultricies fermentum.</p>
-    </div>
+
+    <section class="search-bar">
+        <input type="text" placeholder="Search...">
+        <button>Search</button>
+    </section>
+
+    <section class="login-page">
+        <form>
+            <input type="email" placeholder="Email">
+            <input type="password" placeholder="Password">
+            <button>Login</button>
+        </form>
+    </section>
+
+    <section class="signup-page">
+        <form>
+            <input type="text" placeholder="Name">
+            <input type="email" placeholder="Email">
+            <input type="tel" placeholder="Phone Number">
+            <input type="password" placeholder="Password">
+            <button>Sign Up</button>
+        </form>
+    </section>
+
+    <section class="sell-page">
+        <form>
+            <input type="file" accept="image/*">
+            <input type="number" placeholder="Price">
+            <input type="text" placeholder="Location">
+            <button>Submit</button>
+        </form>
+    </section>
+
+    <section class="contact-us-page">
+        <form>
+            <input type="text" placeholder="Name">
+            <input type="email" placeholder="Email">
+            <textarea placeholder="Describe your problem..."></textarea>
+            <button>Submit</button>
+        </form>
+    </section>
 </body>
+
 </html>
