@@ -1,102 +1,60 @@
-/* styles.css */
+/* General Styling */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: #f2f2f2;
     color: #333;
-    margin: 0;
-    padding: 0;
 }
 
+/* Header Styling */
 header {
     background-color: #007bff;
-    color: white;
-    padding: 10px 0;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
 }
 
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-section {
-    margin: 20px;
-}
-
-input, textarea, button {
-    margin: 5px 0;
-    padding: 5px;
-    width: 100%;
-}
-
-button {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-button:hover {
+/* Navigation Styling */
+nav {
     background-color: #0056b3;
-}
-/* CSS for Blue Theme */
-body {
-    background-color: #f0f5ff;
-    color: #333;
-    font-family: Arial, sans-serif;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
 }
 
 /* Search Bar Styling */
 .search-bar {
-    background-color: #3f51b5;
-    color: #fff;
+    width: 80%;
+    margin: 0 auto;
     padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
     border-radius: 5px;
 }
 
-/* Login Page Styling */
-.login-page {
-    background-color: #f0f5ff;
+/* Form Styling */
+form {
+    width: 80%;
+    margin: 0 auto;
     padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
-/* Signup Page Styling */
-.signup-page {
-    background-color: #f0f5ff;
-    padding: 20px;
+/* Button Styling */
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-/* Sell Page Styling */
-.sell-page {
-    background-color: #f0f5ff;
-    padding: 20px;
-}
-
-/* Buy Page Styling */
-.buy-page {
-    background-color: #f0f5ff;
-    padding: 20px;
-}
-
-/* Rent Page Styling */
-.rent-page {
-    background-color: #f0f5ff;
-    padding: 20px;
-}
-
-/* Lease Page Styling */
-.lease-page {
-    background-color: #f0f5ff;
-    padding: 20px;
-}
-
-/* Contact Form Styling */
-.contact-form {
-    background-color: #f0f5ff;
-    padding: 20px;
+/* Footer Styling */
+footer {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
 }
