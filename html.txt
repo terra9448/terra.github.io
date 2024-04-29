@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="property-selection">
+        <h1>Select a Property</h1>
+        <ul>
+            <li><a href="property-details.html">Buy Property</a></li>
+            <li><a href="property-details.html">Sell Property</a></li>
+            <li><a href="property-details.html">Rent Property</a></li>
+            <li><a href="property-details.html">Lease Property</a></li>
+        </ul>
+    </div>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property Details</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="property-details">
+        <h1>Property Details</h1>
+        <p>Property Name: XYZ</p>
+        <p>Location: ABC</p>
+        <p>Price: $1,000,000</p>
+        <!-- Additional property details here -->
+    </div>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="login-form">
+        <h1>Login</h1>
+        <form>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+</body>
+</html>
+
+

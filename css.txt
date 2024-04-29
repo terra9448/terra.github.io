@@ -1,0 +1,65 @@
+/* Styling for the main container */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Styling for the property sections */
+.property-section {
+  margin-bottom: 20px;
+}
+
+/* Styling for the property details */
+.property-details {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+/* Styling for the search and filter section */
+.search-filter {
+  margin-top: 20px;
+}
+
+/* Styling for the login page */
+.login-form {
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+/* Styling for email notifications */
+.email-notification {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+/* Styling for email content */
+.email-content {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* Styling for email sender and recipient */
+.email-details {
+  font-weight: bold;
+}
+
+/* Responsive design for mobile devices */
+@media only screen and (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+
+  .property-details {
+    padding: 5px;
+  }
+
+  .login-form {
+    width: 100%;
+  }
+}
