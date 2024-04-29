@@ -1,86 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Real Estate Website</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="property-selection">
-        <h1>Select a Property</h1>
-        <ul>
-            <li><a href="property-details.html">Buy Property</a></li>
-            <li><a href="property-details.html">Sell Property</a></li>
-            <li><a href="property-details.html">Rent Property</a></li>
-            <li><a href="property-details.html">Lease Property</a></li>
-        </ul>
-    </div>
-</body>
-</html>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Property Details</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="property-details">
-        <h1>Property Details</h1>
-        <p>Property Name: XYZ</p>
-        <p>Location: ABC</p>
-        <p>Price: $1,000,000</p>
-        <!-- Additional property details here -->
-    </div>
-</body>
-</html>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="login-form">
-        <h1>Login</h1>
-        <form>
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username" required>
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
-            <button type="submit">Login</button>
-        </form>
-    </div>
-</body>
-</html>
-
-<!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Signup Page</title>
+    <title>Real Estate Website</title>
 </head>
+
 <body>
-    <h1>Welcome to our Signup Page</h1>
-    <form action="/submit_signup" method="POST">
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required><br><br>
-        
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required><br><br>
-        
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required><br><br>
-        
-        <button type="submit">Sign Up</button>
-    </form>
+    <h1>Welcome to our Real Estate Website!</h1>
+    <button onclick="redirectTo('search')">Search</button>
+    <button onclick="redirectTo('buy')">Buy</button>
+    <button onclick="redirectTo('sell')">Sell</button>
+    <button onclick="redirectTo('rent')">Rent</button>
+    <button onclick="redirectTo('lease')">Lease</button>
+    <button onclick="redirectTo('about')">About Us</button>
+    <button onclick="redirectTo('contact')">Contact Us</button>
+
+    <script>
+        function redirectTo(page) {
+            if (isNewUser()) {
+                window.location.href = 'signup.html';
+            } else {
+                window.location.href = 'login.html';
+            }
+
+            function isNewUser() {
+                // Check if the user is new or existing
+                return true; // For demonstration, always consider as a new user
+            }
+        }
+    </script>
 </body>
+
 </html>
