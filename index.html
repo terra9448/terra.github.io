@@ -13,57 +13,68 @@
     <header>
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Buy</a></li>
-                <li><a href="#">Sell</a></li>
-                <li><a href="#">Rent</a></li>
-                <li><a href="#">Lease</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Contact Us</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="buy.html">Buy</a></li>
+                <li><a href="sell.html">Sell</a></li>
+                <li><a href="rent.html">Rent</a></li>
+                <li><a href="lease.html">Lease</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
             </ul>
         </nav>
     </header>
 
-    <section class="search-bar">
+    <section id="search-bar">
         <input type="text" placeholder="Search...">
-        <button>Search</button>
+        <button type="submit">Search</button>
     </section>
 
-    <section class="login-page">
+    <section id="login">
+        <h2>Login</h2>
         <form>
             <input type="email" placeholder="Email">
             <input type="password" placeholder="Password">
-            <button>Login</button>
+            <button type="submit">Login</button>
         </form>
     </section>
 
-    <section class="signup-page">
+    <section id="signup">
+        <h2>Sign Up</h2>
         <form>
             <input type="text" placeholder="Name">
             <input type="email" placeholder="Email">
             <input type="tel" placeholder="Phone Number">
             <input type="password" placeholder="Password">
-            <button>Sign Up</button>
+            <button type="submit">Sign Up</button>
         </form>
     </section>
 
-    <section class="sell-page">
+    <section id="sell">
+        <h2>Sell Your Property</h2>
         <form>
             <input type="file" accept="image/*">
-            <input type="number" placeholder="Price">
+            <input type="text" placeholder="Price">
             <input type="text" placeholder="Location">
-            <button>Submit</button>
+            <button type="submit">Submit</button>
         </form>
     </section>
 
-    <section class="contact-us-page">
-        <form>
-            <input type="text" placeholder="Name">
-            <input type="email" placeholder="Email">
-            <textarea placeholder="Describe your problem..."></textarea>
-            <button>Submit</button>
-        </form>
-    </section>
+    <footer>
+        <section id="about">
+            <h3>About Us</h3>
+            <p>Learn more about our company...</p>
+        </section>
+
+        <section id="contact">
+            <h3>Contact Us</h3>
+            <form>
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <textarea placeholder="Your Problem"></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </footer>
 </body>
 
 </html>
