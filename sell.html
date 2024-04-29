@@ -14,3 +14,23 @@
 </body>
 
 </html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sell Page</title>
+</head>
+<body>
+    <h1>Welcome to the Sell Page</h1>
+    <p>Please add details such as images, cost, address:</p>
+    <!-- Form for user input -->
+    <form action="/submit_details" method="post">
+        <label for="images">Images:</label>
+        <input type="file" id="images" name="images"><br><br>
+        <label for="cost">Cost:</label>
+        <input type="text" id="cost" name="cost"><br><br>
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
