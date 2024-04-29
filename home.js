@@ -74,3 +74,11 @@ redirectLogic('existing');
 document.getElementById('sellButton').addEventListener('click', function() {
     window.location.href = 'sell-page.html';
 });
+// Add event listener to the search button
+document.getElementById('searchButton').addEventListener('click', searchFunction);
+
+// Search function
+function searchFunction() {
+    // Add your search logic here
+    console.log('Searching...'); // Example: Displaying a message
+}
